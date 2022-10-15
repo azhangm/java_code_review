@@ -90,7 +90,7 @@ public class FilePractice {
         File file2 = new File("D:" );
         System.out.println("输出目录下的文件列表i  获得信息 了 就可以递归遍历了 ");
         if (file2.isDirectory()) {
-            for (String s : Objects.requireNonNull(file2.list())) {
+            for (java.lang.String s : Objects.requireNonNull(file2.list())) {
                 System.out.println(s);
             }
         }

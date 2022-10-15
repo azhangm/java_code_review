@@ -20,5 +20,9 @@ public class BeanUtils {
         Class<?> aClass = systemClassLoader.loadClass("java.lang.String");
         Class<? extends String> aClass1 = "string".getClass();
         System.out.println(aClass==aClass1);
+
+
+        int i = (Integer.MAX_VALUE + 1) % 1000000007;
+        System.out.println(i);
     }
 }

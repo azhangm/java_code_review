@@ -4,14 +4,14 @@ import org.junit.Test;
 
 import java.io.*;
 
-public class MyObject {
+public class Object   {
+
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Person person = new Person( 10 ,"nuc_zzmm");
+        Person person = new Person( );
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("demo1.txt"));
         objectOutputStream.writeObject(person);
         objectOutputStream.close();
-
         File file = new File("demo1.txt");
 //
         Person person1 = deSerialize(file);
@@ -25,16 +25,16 @@ public class MyObject {
     private static class Person implements Serializable {
         public static final long serialVersionUID = 1312312313L;
 
-        int age;
-        String name;
+        static int age;
+        static String name;
 
         public int getAge() {
             return age;
         }
 
-//        public void setAge(int age) {
-//            this.age = age;
-//        }
+        public void setAge(int age) {
+            this.age = age;
+        }
 
         public String getName() {
             return name;
