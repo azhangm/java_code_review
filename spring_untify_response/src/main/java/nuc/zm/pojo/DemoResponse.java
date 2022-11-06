@@ -20,7 +20,6 @@ public class DemoResponse<T> {
     }
 
     public DemoResponse(T data) {
-        System.out.println("走泛型");
         code = 200;
         message = "success";
         Data = data;
@@ -29,7 +28,7 @@ public class DemoResponse<T> {
     private DemoResponse(ExceptionEnum e) {
         this.code = e.getCode();
                 this.message = e.getMessage();
-            }
+    }
 //    这里加泛型是因为 有警告 看着难受
     public static  DemoResponse<String>  success() {
         return  new DemoResponse<>(null);

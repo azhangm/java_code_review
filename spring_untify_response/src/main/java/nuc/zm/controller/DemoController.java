@@ -26,6 +26,5 @@ public class DemoController {
 //        demo exception ---> test
     throw new DemoException(1,"测试异常");
 
-
     }
 }

@@ -12,7 +12,7 @@ import java.util.List;
 public class PrintStr {
 
     public static void main(String[] args) {
-        String str = "!23";
+        String str = "123";
         char[] chars = str.toCharArray();
         System.out.println(dfs(0, chars, "", new ArrayList<>()));
     }
@@ -24,7 +24,7 @@ public class PrintStr {
                 return null;
            }
         dfs(i + 1,str,path,list);
-        dfs(i  + 1,str,path + str[i],list);
+        dfs(i + 1,str,path + str[i],list);
         return list;
     }
 

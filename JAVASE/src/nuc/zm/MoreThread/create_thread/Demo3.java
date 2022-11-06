@@ -16,10 +16,9 @@ public class Demo3 implements Callable<Double> {
      * 调用
      * 抛 子类 异常
      * @return {@link Double}
-     * @throws Exception 异常
      */
     @Override
-    public Double call() throws Exception {
+    public Double call() {
         return (double) new Random().nextInt(10);
     }
 

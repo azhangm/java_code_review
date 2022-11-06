@@ -99,6 +99,7 @@ public class FilePractice {
 
     public static void main(String[] args) throws IOException {
 
+        System.out.println(new File("").getAbsolutePath());
         System.out.println(new File("hello/test.txt"));
         System.out.println(new File("hello/test.txt").getAbsolutePath());
     }
