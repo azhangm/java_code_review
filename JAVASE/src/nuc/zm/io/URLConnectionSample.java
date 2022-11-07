@@ -9,6 +9,7 @@ import java.io.OutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
 
 /**
  * urlconnection样本
@@ -22,13 +23,13 @@ public class URLConnectionSample {
 
     public static void main(String[] args) throws IOException {
 //      统一资源定位符
-        URL url = new URL("https://lf-cdn-tos.bytescm.com/obj/static/xitu_extension/static/github.46c47564.png");
+        URL url = new URL("https://eec-cn.com/preView/fca1328443f345129ce59f03ecdff4f9/1/b0ec8b85dd854e32b1a5245b18b9ad9d/1?userType=0");
 
 //         建立通信管道  和 某一台服务器建立连接
         URLConnection urlConnection = url.openConnection();
 
         inputStream = urlConnection.getInputStream();
-        FileOutputStream fileOutputStream = new FileOutputStream("/weixin.jpg");
+        FileOutputStream fileOutputStream = new FileOutputStream("/dadasdasdasda.jpg");
 
         byte[] bs = new byte[1024];
 
