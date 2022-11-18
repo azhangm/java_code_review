@@ -8,6 +8,7 @@ import java.util.List;
  * 打印所有排列
  * @description  "打印字符串的全排列"
  * @description  ”递归 本质 -->  尝试“
+ * @description  决策问题
  * @author zm
  * @date 2022/11/18
  */
