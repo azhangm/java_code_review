@@ -17,15 +17,13 @@ public class PrintStr {
         System.out.println(dfs(0, chars, "", new ArrayList<>()));
     }
 
-    static List<String > dfs(int i , char[] str , String path , List<String > list) {
-           if (i >= str.length) {
-               System.out.println(path);
-                list.add(path);
-                return null;
-           }
-        dfs(i + 1,str,path,list);
-        dfs(i + 1,str,path + str[i],list);
+    static List<String> dfs(int i, char[] str, String path, List<String> list) {
+        if (i >= str.length) {
+            list.add(path);
+        } else {
+            dfs(i + 1, str, path, list);
+            dfs(i + 1, str, path + str[i], list);
+        }
         return list;
     }
-
 }
