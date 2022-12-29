@@ -2,7 +2,6 @@ package nuc.zm.controller;
 
 import nuc.zm.exception.DemoException;
 import nuc.zm.pojo.Demo;
-import nuc.zm.pojo.ExceptionEnum;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

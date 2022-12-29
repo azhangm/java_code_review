@@ -15,8 +15,8 @@ public class FullPerm {
     private static boolean[] use;
     public static void main(String[] args) {
         Scanner sc  = new Scanner(System.in);
-        String str = sc.next();
-        permutation(str);
+//        String str = sc.next();
+        permutation("123");
     }
 
     /**
