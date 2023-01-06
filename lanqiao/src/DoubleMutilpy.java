@@ -15,6 +15,6 @@ public class DoubleMutilpy {
             if (i % 2 == 1) bigInteger  = bigInteger.multiply(BigInteger.valueOf(i));
         }
 
-        System.out.println(bigInteger);
+        System.out.println(bigInteger.divideAndRemainder(BigInteger.valueOf(100000))[1]);
     }
 }
