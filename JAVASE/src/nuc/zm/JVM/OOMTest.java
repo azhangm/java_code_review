@@ -13,7 +13,7 @@ public class OOMTest {
     public static void main(String[] args) throws InterruptedException {
         ArrayList<Ob> objects = new ArrayList<>();
         while (true) {
-            Thread.sleep(200 );
+            Thread.sleep(200);
             objects.add(new Ob(1024*1024));
         }
     }
