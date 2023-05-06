@@ -1,5 +1,9 @@
 package nuc.zm.JVM.gc;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 /**
  * 内存泄漏
  * @description : 演示内存泄漏问题
